@@ -73,7 +73,7 @@
 }
 
 #content1 {
-  background-image: url("home-cognos.png");
+  background-image: url("images/home-cognos.png");
   background-size: cover;
   grid-area: content1;
   color: white;
@@ -137,7 +137,7 @@
 
 #content7 {
   color: white;
-  background-image: url("home-data.png");
+  background-image: url("images/home-data.png");
   background-size: cover;
   grid-area: content7;
   position: relative;
