@@ -167,9 +167,15 @@
 }
 
 @media only screen and (max-width: 978px) {
+  .maingrid {
+    height: auto;
+  }
   .maingrid .container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, 120px);
+    overflow: visible;
+    height: auto;
+    gap: 20px;
     grid-template-areas:
       "sidebar sidebar"
       "sidebar sidebar"
@@ -178,14 +184,6 @@
       "content3 content4"
       "content5 content6"
       "content7 content8";
-    overflow: visible;
-  }
-  .maingrid {
-    height: 100vh;
-  }
-  #content1,
-  #content7 {
-    background: black;
   }
 }
 
