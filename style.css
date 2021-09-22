@@ -52,7 +52,7 @@
 
 .maingrid {
   background-color: #ededed;
-  height: auto;
+  height: 85vh;
 }
 
 .maingrid .container {
@@ -71,7 +71,7 @@
 #sidebar {
   background: white;
   grid-area: sidebar;
-  height: auto;
+  height: fit-content;
   overflow: visible;
 }
 
