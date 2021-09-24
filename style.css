@@ -51,6 +51,14 @@
   color: #000;
 }
 
+.nav3 {
+  padding-top: 10px;
+}
+
+.navbox {
+  box-shadow: 10px 5px 5px black;
+}
+
 .nav3 a:hover {
   color: black;
 }
@@ -69,10 +77,6 @@
 
 .nav3 ul:hover::before {
   transform: scaleX(1);
-}
-
-.nav3 {
-  box-shadow: 0px 10px 10px rgb(143, 143, 143);
 }
 
 .maingrid {
@@ -219,17 +223,21 @@
 }
 
 .fa-book {
-  color:rgb(226, 187, 60)
+  color: rgb(226, 187, 60);
 }
 
-.fa-university, .fa-laptop{
-  color:rgb(143, 143, 143)
+.fa-university,
+.fa-laptop {
+  color: rgb(143, 143, 143);
 }
 
 .fa-sign-in-alt {
-  color:rgb(224, 201, 125)
+  color: rgb(224, 201, 125);
 }
 
+.bigfooter .fa-plus {
+  display: none;
+}
 
 @media only screen and (max-width: 978px) {
   .nav2 {
@@ -249,7 +257,7 @@
   }
   .maingrid .container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(7, 135px);
+    grid-template-rows: repeat(7, 145px);
     overflow: visible;
     height: auto;
     gap: 20px;
@@ -311,9 +319,32 @@
   .bigfooter {
     flex-direction: column;
   }
-
   .icon {
     font-size: larger;
+  }
+  .bigfooter .bar {
+    display: contents;
+    text-align: right;
+  }
+  .fa-plus {
+    color: #cfb991;
+  }
+  .row {
+    padding-bottom: 20px;
+    border-bottom: #cfb991 1px solid;
+  }
+  .bigfooter-right {
+    margin: auto;
+  }
+  .footerlogo {
+    margin: auto;
+    padding-top: 20px;
+    min-width: 25vw;
+  }
+  .logos .fab {
+    padding: 20px 12px 0px 12px;
+    font-size: medium;
+    color:rgb(183, 183, 184);
   }
   .foot2 {
     padding: 10px 20px 10px 20px;
