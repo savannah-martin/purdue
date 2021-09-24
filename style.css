@@ -11,23 +11,23 @@
   --light-color: #c5dceb4b;
 }*/
 
-.navbar {
+.nav1 {
   background-color: #cfb991;
   color: black;
   height: 35px;
 }
 
-.navbar a {
+.nav1 a {
   text-decoration: none;
   color: black;
 }
-.navbar a:hover {
+.nav1 a:hover {
   color: black;
   text-decoration: underline;
   text-decoration-color: black;
 }
 
-.navbar a:active {
+.nav1 a:active {
   color: black;
 }
 
@@ -46,8 +46,33 @@
   padding: 10px 0 10px 0;
 }
 
+.nav3 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav3 a:hover {
+  color: black;
+}
+
+.nav3 ul::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: relative;
+  bottom: 0;
+  background-color: rgb(134, 109, 27);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav3 ul:hover::before {
+  transform: scaleX(1);
+}
+
 .nav3 {
-  box-shadow: 0px 10px 10px lightgray;
+  box-shadow: 0px 10px 10px rgb(143, 143, 143);
 }
 
 .maingrid {
@@ -76,15 +101,15 @@
   overflow: visible;
 }
 
-#sidebar .button {
-  border: 5px solid tan;
+.sidebarbutton:hover {
+  background-color: #d3c6ae;
 }
 
 #content1 {
   background-size: cover;
   grid-area: content1;
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   position: relative;
 }
 
@@ -93,13 +118,20 @@
   bottom: 0;
   left: 0;
 }
+.span {
+  background-color: #fff !important;
+  display: block;
+  margin-bottom: 10px;
+  width: 60px;
+  height: 7px;
+}
 
 .sidebarbutton {
   height: auto;
   text-align: center;
   background-color: #f8f8f8;
   border-radius: 3px;
-  border: 2px solid tan;
+  border: 2px solid rgb(139, 112, 76);
   margin: 10px;
 }
 
@@ -187,6 +219,30 @@
   #content7 {
     background-color: black;
   }
+  #content1 {
+    font-size: 16px;
+  }
+  #content2 {
+    font-size: 16px;
+  }
+  #content3 {
+    font-size: 16px;
+  }
+  #content4 {
+    font-size: 16px;
+  }
+  #content5 {
+    font-size: 16px;
+  }
+  #content6 {
+    font-size: 16px;
+  }
+  #content7 {
+    font-size: 16px;
+  }
+  #content8 {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (min-width: 977px) {
@@ -219,6 +275,9 @@
   color: rgb(182, 181, 181);
 }
 
+.nav1 .fas {
+  color: black;
+}
 .foot2 {
   background-color: rgb(61, 61, 61);
   color: rgb(182, 181, 181);
