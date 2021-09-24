@@ -52,6 +52,7 @@
 }
 
 .nav3 {
+  background-color: #f8f8f8;
   padding-top: 10px;
 }
 
@@ -63,7 +64,7 @@
   color: black;
 }
 
-.nav3 ul::before {
+.nav3 ul::after {
   content: "";
   display: block;
   width: 100%;
@@ -75,7 +76,7 @@
   transition: transform 0.3s ease;
 }
 
-.nav3 ul:hover::before {
+.nav3 ul:hover::after {
   transform: scaleX(1);
 }
 
@@ -238,6 +239,10 @@
 .bigfooter .fa-plus {
   display: none;
 }
+.bigfooter {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 @media only screen and (max-width: 978px) {
   .nav2 {
@@ -252,6 +257,14 @@
   .nav2 .BICC {
     margin: auto;
   }
+  .nav3 {
+    width: 99vw;
+    background-color: rgb(36, 36, 36) !important;
+  }
+  .nav3 a {
+    display: none;
+  }
+  
   .maingrid {
     height: auto;
   }
@@ -330,8 +343,18 @@
     color: #cfb991;
   }
   .row {
-    padding-bottom: 20px;
+    width: 100vw;
+    padding: 0px 0px 0px 0px !important;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
     border-bottom: #cfb991 1px solid;
+  }
+  .row h4 {
+    padding-top: 20px;
+  }
+  .bar {
+    width: 25px;
   }
   .bigfooter-right {
     margin: auto;
@@ -344,7 +367,7 @@
   .logos .fab {
     padding: 20px 12px 0px 12px;
     font-size: medium;
-    color:rgb(183, 183, 184);
+    color: rgb(183, 183, 184);
   }
   .foot2 {
     padding: 10px 20px 10px 20px;
