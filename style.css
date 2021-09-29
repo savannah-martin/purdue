@@ -264,10 +264,22 @@
 }
 
 @media only screen and (max-width: 978px) {
-  .nav1 menu {
-    margin-left: 50px;
+  .topbar {
+    display: contents;
+    position: absolute;
+    background-color: #cfb991;
+    height: 55px;
+  }
+  .topbar .container {
     display: flex;
-    align-items: baseline;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .topbar .left {
+    display: flex;
+  }
+  .nav1 {
+    display: none;
   }
   .nav3 p {
     color: white;
