@@ -37,6 +37,10 @@
 }
 
 .nav2 img {
+  padding-left: 7%;
+}
+
+.nav2 img {
   max-height: 75px;
   border-right: 2px solid rgba(255, 255, 255, 0.534);
 }
@@ -258,14 +262,8 @@
 .topbar {
   display: none;
 }
+
 @media only screen and (max-width: 978px) {
-  .nav1 {
-    height: 50px;
-  }
-  .topbar {
-    display: inline-block;
-    color: black;
-  }
   .nav1 menu {
     margin-left: 50px;
     display: flex;
@@ -369,6 +367,30 @@
   }
   #content8 .icon {
     display: contents;
+  }
+  #content1 .content-p {
+    padding-top: 15px;
+  }
+  #content2 .content-p {
+    padding-top: 15px;
+  }
+  #content3 .content-p {
+    padding-top: 15px;
+  }
+  #content4 .content-p {
+    padding-top: 15px;
+  }
+  #content5 .content-p {
+    padding-top: 15px;
+  }
+  #content6 .content-p {
+    padding-top: 15px;
+  }
+  #content7 .content-p {
+    padding-top: 15px;
+  }
+  #content8 .content-p {
+    padding-top: 15px;
   }
   .bigfooter a {
     display: none;
